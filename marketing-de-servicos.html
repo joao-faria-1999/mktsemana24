@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketing de serviços – Material de apoio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--o:#F7931E;--p:#E8336D;--bg:#FFF9F4;--ink:#2B2230;--mut:#6B5F70;--line:#F3DFCF;--ok:#1F8A5B;--no:#C0392B;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:Poppins,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--p)}
+:focus-visible{outline:3px solid var(--p);outline-offset:2px}
+.hero{background:linear-gradient(135deg,var(--o),var(--p));color:#fff;padding:48px 20px 56px}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+.hero .wrap{padding:0}
+.hero h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.2;margin:0 0 10px}
+.hero p{margin:0;max-width:62ch;opacity:.95}
+nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 20px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:500;font-size:.9rem;padding:6px 14px;border-radius:99px}
+nav a:hover{background:#FFE9D6}
+section{padding:40px 0 8px}
+h2{font-size:1.6rem;margin:0 0 4px;color:var(--p)}
+h3{font-size:1.1rem;margin:26px 0 8px}
+.sub{color:var(--mut);margin:0 0 16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:12px 0}
+.key{border-left:5px solid var(--o);background:#FFF1E2;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+button,select,textarea,input{font:inherit}
+.chip{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--line);background:#fff;color:var(--ink);border-radius:99px;padding:6px 16px;cursor:pointer;font-weight:500}
+.chip:hover{border-color:var(--o)}
+.chip[aria-pressed=true]{background:var(--o);border-color:var(--o);color:#fff}
+.chip svg{width:22px;height:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.grid .card{margin:0}
+.ic{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,#FFE3C4,#FFD0DE);color:var(--p);flex:none}
+.ic svg{width:40px;height:40px}
+.ic.sm{width:48px;height:48px;border-radius:14px}.ic.sm svg{width:30px;height:30px}
+.head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.head b{font-size:1.05rem}
+.tag{display:inline-block;font-size:.78rem;font-weight:600;border-radius:99px;padding:2px 10px;color:#fff;background:var(--p)}
+.panel{display:flex;gap:16px;align-items:flex-start}
+.panel p{margin:4px 0 0}
+details{background:#FFF9F4;border:1px solid var(--line);border-radius:10px;padding:8px 14px;margin:10px 0 0;font-size:.92rem}
+summary{cursor:pointer;font-weight:600;color:var(--p)}
+.btn{background:var(--p);color:#fff;border:0;border-radius:10px;padding:10px 20px;font-weight:600;cursor:pointer}
+.btn:hover{background:#cf2660}
+.btn.alt{background:#fff;color:var(--p);border:2px solid var(--p)}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:2px solid var(--line);border-radius:10px;padding:9px 14px;margin:6px 0;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--o)}
+.opt.right{border-color:var(--ok);background:#E8F6EF}
+.opt.wrong{border-color:var(--no);background:#FBEAE7}
+.fb{margin:6px 0 0;font-size:.9rem;min-height:1.3em}
+.qq{padding:10px 0;border-bottom:1px dashed var(--line)}
+.qq:last-of-type{border-bottom:0}
+.qq>p{margin:0 0 4px;font-weight:600}
+.score{font-weight:600;color:var(--p)}
+label{font-weight:500;font-size:.9rem;display:block;margin:12px 0 4px}
+textarea,input[type=text],select{width:100%;border:2px solid var(--line);border-radius:10px;padding:9px 12px;background:#fff;color:var(--ink)}
+textarea{min-height:60px;resize:vertical}
+textarea:focus,input:focus,select:focus{border-color:var(--o)}
+pre{white-space:pre-wrap;font:inherit;margin:0}
+footer{padding:36px 20px 48px;text-align:center;color:var(--mut);font-size:.85rem}
+footer a{word-break:break-all}
+@media (max-width:560px){.panel{flex-direction:column}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<h1>Marketing de serviços</h1>
+<p>Material de apoio das aulas 1, 2 e 3 (Unidade 5, Componente 1 – Marketing de varejo e serviços). Leia, explore os exemplos e teste o que aprendeu nos quizzes.</p>
+</div></header>
+<nav><div class="wrap">
+<a href="#aula1">Aula 1 · Características dos serviços</a>
+<a href="#aula2">Aula 2 · Diferenciação e personalização</a>
+<a href="#aula3">Aula 3 · Plano estratégico</a>
+<a href="#mais">Saiba mais</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="aula1">
+<h2>Aula 1 · Características dos serviços</h2>
+<p class="sub">Objetivo: compreender as características do marketing de serviços e como elas afetam a oferta e a satisfação do cliente.</p>
+
+<h3>Ponto de partida</h3>
+<p>Quando você vai a um restaurante ou a uma lanchonete, o que mais pesa na sua escolha?</p>
+<div class="row" id="pp" role="group" aria-label="Escolha"></div>
+<p class="fb" id="ppFb" aria-live="polite"></p>
+
+<h3>As quatro características</h3>
+<p class="sub">Elas podem afetar a satisfação dos clientes. Abra “Como lidar” para ver uma estratégia para cada uma.</p>
+<div class="grid" id="carac"></div>
+
+<h3>Exemplos do dia a dia</h3>
+<div class="row" id="exTabs" role="group" aria-label="Exemplos"></div>
+<div class="card panel" id="exPanel" aria-live="polite"></div>
+
+<h3>Consulta médica: as quatro juntas</h3>
+<div class="grid" id="consulta"></div>
+
+<h3>Explore: serviços e seus focos</h3>
+<p class="sub">Escolha um serviço para ver quais características pedem mais atenção e a pergunta-guia de cada uma.</p>
+<div class="row" id="svcTabs" role="group" aria-label="Serviços"></div>
+<div class="card" id="svcPanel" aria-live="polite"></div>
+
+<div class="card" id="q1"></div>
+</section>
+
+<section id="aula2">
+<h2>Aula 2 · Estratégias de marketing de serviços</h2>
+<p class="sub">Objetivo: discutir estratégias de personalização e diferenciação e como aplicá-las para criar valor para o cliente e vantagem competitiva.</p>
+
+<div class="card panel">
+<div class="ic"><i data-ic="home"></i></div>
+<div><b>Caso Samsung</b>
+<p>Até agosto de 2024, a Samsung tinha 49 centros de serviço no Brasil, e 24 deles contavam com a infraestrutura Smart Center, com demonstração da casa inteligente e conectada (PATI, 2024).</p>
+<p><b>Reflita:</b> o que levou a empresa a oferecer, em lojas de assistência técnica, uma demonstração da casa inteligente?</p>
+<details><summary>Uma leitura possível</summary>Transformar a ida à assistência em uma experiência que mostra os produtos em uso. Isso diferencia a empresa dos concorrentes e aproxima o cliente da marca.</details></div>
+</div>
+
+<h3>Diferenciação</h3>
+<div class="key">A diferenciação é a estratégia que conquista a fidelidade dos clientes e aumenta os lucros, dando vantagem sobre os concorrentes. Como os clientes estão mais exigentes, as empresas precisam criar produtos e serviços novos mais rapidamente para se destacar.</div>
+<p class="sub">Sete estratégias que tornam a empresa única e fácil de reconhecer. Toque em cada uma.</p>
+<div class="row" id="difTabs" role="group" aria-label="Estratégias de diferenciação"></div>
+<div class="card panel" id="difPanel" aria-live="polite"></div>
+
+<h3>Personalização</h3>
+<div class="key">A personalização cria uma conexão verdadeira com os clientes. Vai além do produto ou serviço: o foco é tornar toda a experiência única. Pequenos negócios também podem usar dados para fazer ofertas personalizadas, como faz a Netflix com seu conteúdo.</div>
+<div class="row" id="perTabs" role="group" aria-label="Estratégias de personalização"></div>
+<div class="card panel" id="perPanel" aria-live="polite"></div>
+
+<h3>Exemplos de empresas</h3>
+<div class="grid">
+<div class="card"><div class="head"><div class="ic sm"><i data-ic="shoe"></i></div><b>Nike By You</b></div><p style="margin:0">O cliente personaliza o tênis, escolhendo cores e materiais e incluindo nomes ou frases. O produto fica exclusivo e reflete o estilo pessoal dele. <small>(NIKE, [s.d.])</small></p></div>
+<div class="card"><div class="head"><div class="ic sm"><i data-ic="music"></i></div><b>Spotify</b></div><p style="margin:0">Serviço simples e acessível, com interface intuitiva e personalizável, playlists exclusivas e descoberta de novos artistas, tudo centrado na experiência do usuário. <small>(GARGIONI, 2023)</small></p></div>
+</div>
+
+<div class="card" id="q2"></div>
+</section>
+
+<section id="aula3">
+<h2>Aula 3 · Criação de um plano estratégico</h2>
+<p class="sub">Objetivo: aplicar as características dos serviços, a personalização e a diferenciação para criar uma proposta de valor, considerando as necessidades dos clientes e a concorrência.</p>
+
+<h3>Relembre</h3>
+<div class="grid">
+<div class="card"><div class="head"><div class="ic sm"><i data-ic="target"></i></div><b>Diferenciação</b></div><p style="margin:0">Destacar o serviço em relação à concorrência: o que o torna único no mercado.</p></div>
+<div class="card"><div class="head"><div class="ic sm"><i data-ic="mail"></i></div><b>Personalização</b></div><p style="margin:0">Adaptar a experiência às necessidades e preferências de cada cliente, com coleta de dados ou opções personalizadas.</p></div>
+</div>
+
+<h3>O que o plano precisa ter</h3>
+<div class="grid">
+<div class="card"><b>1. Serviço e características</b><br>Intangibilidade, inseparabilidade, variabilidade e perecibilidade.</div>
+<div class="card"><b>2. Público-alvo</b><br>Para quem o serviço é pensado.</div>
+<div class="card"><b>3. Personalização</b><br>Como o serviço se adapta ao cliente.</div>
+<div class="card"><b>4. Diferenciação</b><br>O diferencial competitivo: qualidade, preço, inovação, experiência etc.</div>
+<div class="card"><b>5. Proposta de valor</b><br>O que o serviço oferece e por que o cliente o escolheria.</div>
+</div>
+
+<h3>Monte o seu plano</h3>
+<div class="card">
+<label for="svc">Serviço</label>
+<select id="svc"></select>
+<p class="fb" id="svcNote" aria-live="polite"></p>
+<label for="pub">Público-alvo</label><input type="text" id="pub" placeholder="Ex.: estudantes que treinam à noite">
+<label for="per">Estratégia de personalização</label><textarea id="per"></textarea>
+<label for="dif">Estratégia de diferenciação</label><textarea id="dif"></textarea>
+<label for="val">Proposta de valor: o que oferece e por que o cliente escolheria</label><textarea id="val"></textarea>
+<div class="row"><button class="btn" id="mk">Montar resumo</button></div>
+</div>
+<div class="card" id="out" hidden>
+<pre id="outTxt"></pre>
+<div class="row"><button class="btn alt" id="copy">Copiar resumo</button></div>
+<p class="fb" id="copyFb" aria-live="polite"></p>
+</div>
+
+<div class="card" id="q3"></div>
+</section>
+
+<section id="mais">
+<h2>Saiba mais</h2>
+<div class="card"><ul style="margin:0;padding-left:20px">
+<li><a href="https://sebrae.com.br/sites/PortalSebrae/artigos/marketing-de-servicos-uma-visao-baseada-nos-8-ps,a799a442d2e5a410VgnVCM1000003b74010aRCRD">Sebrae – Marketing de serviços: uma visão baseada nos 8 Ps</a></li>
+<li><a href="https://sebrae.com.br/sites/PortalSebrae/cursosonline/atendimento-ao-cliente,fe80b8a6a28bb610VgnVCM1000004c00210aRCRD">Sebrae – Curso Atendimento ao Cliente</a></li>
+<li><a href="https://admpg.com.br/2020/anais/arquivos/08142020_190856_5f3716f4e9c85.pdf">VALENGA et al. – Características de serviços de uma incubadora de negócios (artigo)</a></li>
+</ul></div>
+</section>
+</main>
+<footer>Material de apoio baseado nas aulas [ADM]ANO2C1B4S24A1, A2 e A3 – Educação Profissional Paulista, Técnico em Administração (SEDUC-SP).<br>Referências: Cobra (2021); Parente e Barki (2014); Las Casas e Garcia (2007); Sebrae; Pati (2024); Gargioni (2023); Nike.</footer>
+
+<script>
+const $=(s,e=document)=>e.querySelector(s);
+const h=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+
+/* Ilustrações (SVG de traço, 64x64) */
+const P={
+intang:'<circle cx="32" cy="32" r="22" stroke-dasharray="4 5"/><path d="M32 18l4 9 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z"/>',
+insep:'<circle cx="24" cy="32" r="14"/><circle cx="40" cy="32" r="14"/>',
+var:'<path d="M12 50V34M24 50V20M36 50V40M48 50V14M8 54h48"/>',
+per:'<path d="M18 10h28M18 54h28M20 10c0 16 24 16 24 44M44 10c0 16-24 16-24 44"/>',
+wrench:'<path d="M42 10a12 12 0 0 0-10 16L12 46a5 5 0 0 0 7 7l20-20a12 12 0 0 0 16-10l-8 6-7-2-2-7z"/>',
+ac:'<rect x="8" y="16" width="48" height="18" rx="4"/><path d="M16 40c0 6-4 8-4 14M32 40c0 6-4 8-4 14M48 40c0 6-4 8-4 14"/>',
+bus:'<rect x="10" y="12" width="44" height="34" rx="6"/><path d="M10 28h44M18 52v-6M46 52v-6"/><circle cx="20" cy="38" r="2"/><circle cx="44" cy="38" r="2"/>',
+doc:'<rect x="10" y="10" width="44" height="44" rx="10"/><path d="M32 20v24M20 32h24"/>',
+store:'<path d="M10 24l6-12h32l6 12v4H10zM14 28v26h36V28M26 54V40h12v14"/>',
+home:'<path d="M8 30L32 10l24 20M14 26v28h36V26"/><path d="M26 42a8 8 0 0 1 12 0M22 37a14 14 0 0 1 20 0"/>',
+shoe:'<path d="M8 40c10 0 12-12 14-20l8 6 8 4c8 2 18 4 18 12v4H8z"/><path d="M8 52h48"/>',
+music:'<path d="M24 46V16l24-6v30"/><circle cx="18" cy="46" r="6"/><circle cx="42" cy="40" r="6"/>',
+target:'<circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="12"/><circle cx="32" cy="32" r="3"/>',
+heart:'<path d="M32 52S10 38 10 24a11 11 0 0 1 22-3 11 11 0 0 1 22 3c0 14-22 28-22 28z"/>',
+plus:'<circle cx="32" cy="32" r="22"/><path d="M32 20v24M20 32h24"/>',
+search:'<circle cx="28" cy="28" r="16"/><path d="M40 40l14 14"/>',
+chat:'<path d="M10 14h44v28H30l-12 10V42H10z"/>',
+star:'<path d="M32 8l7 16 17 2-13 12 4 17-15-9-15 9 4-17L8 26l17-2z"/>',
+shield:'<path d="M32 8l20 8v16c0 12-8 20-20 24C20 52 12 44 12 32V16z"/>',
+mail:'<rect x="8" y="14" width="48" height="36" rx="5"/><path d="M8 18l24 18 24-18"/>',
+chip:'<rect x="18" y="18" width="28" height="28" rx="4"/><path d="M26 10v8M38 10v8M26 46v8M38 46v8M10 26h8M10 38h8M46 26h8M46 38h8"/>',
+food:'<path d="M10 30h44a22 22 0 0 1-44 0zM18 22c0-6 6-6 6-12M32 22c0-6 6-6 6-12M12 52h40"/>',
+gym:'<path d="M14 24v16M22 18v28M42 18v28M50 24v16M22 32h20M8 28v8M56 28v8"/>',
+laptop:'<rect x="12" y="14" width="40" height="26" rx="3"/><path d="M6 48h52"/>',
+lang:'<path d="M10 14h30v22H22l-8 8v-8h-4zM34 26h20v22h-4v8l-8-8H34z"/>'};
+const svg=n=>`<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[n]}</svg>`;
+document.querySelectorAll('[data-ic]').forEach(e=>{e.outerHTML=svg(e.dataset.ic)});
+
+/* Grupo de botões que mostra um painel */
+function tabs(rowId,panelId,items,fill){
+  const row=$(rowId),panel=$(panelId);
+  items.forEach(it=>{
+    const b=h('button','chip');b.type='button';b.setAttribute('aria-pressed','false');
+    b.innerHTML=(it.i?svg(it.i):'')+'<span></span>';b.lastChild.textContent=it.t;
+    b.onclick=()=>{row.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');panel.innerHTML='';fill(panel,it)};
+    row.appendChild(b);
+  });
+  row.firstChild.click();
+}
+const show=(p,it)=>{p.innerHTML=`<div class="ic">${svg(it.i)}</div><div><b>${it.t}</b>${it.tag?` <span class="tag">${it.tag}</span>`:''}<p>${it.d}</p></div>`};
+
+/* Aula 1 */
+const pp={Atendimento:'O atendimento é parte do serviço: acontece junto com o consumo e muda de pessoa para pessoa.','O ambiente':'O ambiente faz parte da experiência de serviço. Você só o avalia estando lá.','O preço':'O preço é uma das informações que você consegue comparar antes de ir.','O sabor da comida':'A comida é o produto; o serviço é todo o resto: atendimento, ambiente, rapidez.','Outra opção':'Cada pessoa valoriza algo diferente, e é isso que torna a escolha de serviços tão pessoal.'};
+Object.keys(pp).forEach(k=>{const b=h('button','chip',k);b.type='button';b.setAttribute('aria-pressed','false');
+  b.onclick=()=>{$('#pp').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');$('#ppFb').textContent=pp[k]};$('#pp').appendChild(b)});
+
+const car=[
+ {t:'Intangibilidade',i:'intang',d:'Ser intangível significa que algo não pode ser tocado ou materializado.',e:'Show artístico.',c:'Torne o serviço “tangível”: apresentações visuais ou vídeos mostrando o serviço sendo realizado, ou vídeo com depoimentos de clientes satisfeitos para o cliente visualizar o serviço antes de contratá-lo.'},
+ {t:'Inseparabilidade',i:'insep',d:'O que é produzido e consumido não pode ser separado.',e:'Salão de beleza: o serviço é produzido enquanto é prestado (consumido).',c:'Melhore a experiência durante a interação: treine bem os funcionários para oferecer atendimento personalizado.'},
+ {t:'Variabilidade',i:'var',d:'Pode variar bastante, pois depende de quem, quando e como o serviço é oferecido. A qualidade muda conforme o dia e a pessoa.',e:'Clínica médica.',c:'Mantenha a qualidade consistente padronizando os processos internos, como um protocolo de atendimento igual para todos os instrutores de uma academia.'},
+ {t:'Perecibilidade',i:'per',d:'Por não ser físico, o serviço não pode ser guardado e muitas vezes só tem valor em um momento específico.',e:'Viagens aéreas.',c:'Planeje a oferta de serviços para os horários de maior demanda.'}];
+car.forEach(x=>{const c=h('div','card');
+  c.innerHTML=`<div class="head"><div class="ic">${svg(x.i)}</div><b>${x.t}</b></div><p style="margin:4px 0">${x.d}</p><p style="margin:4px 0"><b>Exemplo:</b> ${x.e}</p><details><summary>Como lidar</summary>${x.c}</details>`;
+  $('#carac').appendChild(c)});
+
+tabs('#exTabs','#exPanel',[
+ {t:'Mecânico',i:'wrench',tag:'Intangibilidade',d:'Quando o carro quebra e chamamos um mecânico, não avaliamos só ele, mas a ação em si: como o conserto e o atendimento foram realizados. O serviço não pode ser tocado ou embalado, e cada conserto é único.'},
+ {t:'Ar-condicionado',i:'ac',tag:'Inseparabilidade',d:'Quando alguém instala um aparelho, geralmente acompanhamos o trabalho. Se não gostamos da instalação, podemos pedir alterações, o que muda o serviço e o resultado.'},
+ {t:'Transporte',i:'bus',tag:'Perecibilidade',d:'No horário de pico, uma empresa de transporte precisa de muitos veículos para atender a demanda. Em outros horários, parte da frota fica sem uso.'},
+ {t:'Médico e loja de roupas',i:'store',tag:'Variabilidade',d:'Um médico pode ser mais atencioso do que outro para prestar o mesmo serviço. O atendimento em lojas de roupas também varia, pois cada uma tem sua estrutura, seu treinamento e sua maneira de atender.'}],show);
+
+[['Intangibilidade','intang','A consulta não pode ser tocada ou armazenada: é uma experiência imaterial.'],
+ ['Inseparabilidade','insep','O serviço é produzido e consumido ao mesmo tempo, durante a consulta.'],
+ ['Variabilidade','var','A qualidade do atendimento pode variar conforme o médico, o dia e as condições da consulta.'],
+ ['Perecibilidade','per','Se o paciente não comparece, a consulta não pode ser “armazenada” para depois e o tempo do médico é perdido.']].forEach(([t,i,d])=>{
+  const c=h('div','card');c.innerHTML=`<div class="head"><div class="ic sm">${svg(i)}</div><b>${t}</b></div><p style="margin:0;font-size:.92rem">${d}</p>`;$('#consulta').appendChild(c)});
+
+const guia={Intangibilidade:'Como tornar o serviço “tangível” para os clientes?',Inseparabilidade:'Como melhorar a experiência do cliente durante a interação, já que produção e consumo acontecem juntos?',Variabilidade:'Como manter a qualidade consistente, mesmo que o serviço varie conforme quem o presta?',Perecibilidade:'Como lidar com a natureza perecível do serviço?'};
+tabs('#svcTabs','#svcPanel',[
+ {t:'Entrega de alimentos',i:'food',f:['Perecibilidade','Inseparabilidade']},
+ {t:'Academia',i:'gym',f:['Variabilidade','Intangibilidade']},
+ {t:'Consultoria on-line',i:'laptop',f:['Intangibilidade','Inseparabilidade']},
+ {t:'Escola de idiomas',i:'lang',f:['Variabilidade','Intangibilidade']}],
+ (p,it)=>{p.innerHTML=`<b>${it.t}: foco em ${it.f[0].toLowerCase()} e ${it.f[1].toLowerCase()}</b>`+it.f.map(k=>`<p style="margin:8px 0 0"><span class="tag">${k}</span> ${guia[k]}</p>`).join('')});
+
+/* Aula 2 */
+tabs('#difTabs','#difPanel',[
+ {t:'Ser única',i:'target',d:'Não deve existir no mercado outra solução que atenda à mesma necessidade do cliente. Isso gera uma posição vantajosa em relação à concorrência.'},
+ {t:'Sustentável',i:'shield',d:'A vantagem precisa ser sustentável. Se for fácil de copiar, torna-se temporária e pode impedir o crescimento e os lucros da empresa.'},
+ {t:'Branding',i:'heart',d:'Marcas precisam de personalidade. O objetivo é criar laços com os clientes por meio de valores, tom de voz e impacto, e não apenas um logo bonito.'},
+ {t:'Reconheça clientes',i:'star',d:'Mostre aos clientes que eles são importantes. Programas de fidelidade dão razões para escolherem a sua marca, principalmente quando serviços e preços são parecidos.'},
+ {t:'Ofereça a mais',i:'plus',d:'Pense em algo a mais, além do que já é oferecido, como uma consultoria de moda se você vende roupas. Esses detalhes ajudam a marca a se destacar e atrair mais clientes.'},
+ {t:'Faça pesquisas',i:'search',d:'Acompanhe o comportamento de compra dos clientes, faça pesquisas de satisfação e preste atenção no que eles falam nas redes sociais.'},
+ {t:'Foco no atendimento',i:'chat',d:'Na internet, as informações circulam rápido, e muitos clientes esperam ser atendidos com agilidade e eficiência, muitas vezes trocando de canal durante o atendimento.'}],show);
+tabs('#perTabs','#perPanel',[
+ {t:'Atendimento',i:'chat',d:'Tenha informações de cada cliente; mantenha contato após a venda; dialogue de forma atenciosa, respeitosa e humanizada; ofereça exclusividade nos serviços; treine a equipe e converse sobre atendimento de qualidade.'},
+ {t:'Comunicação',i:'mail',d:'Usar o nome dos clientes em e-mails, mensagens e chamadas deixa a conversa mais próxima e acolhedora. Com conexão emocional, o cliente se sente especial e valorizado. Entender quem são os clientes é uma forma de conquistar a confiança deles.'},
+ {t:'Tecnologia',i:'chip',d:'A inteligência artificial permite atendimento personalizado com base nos hábitos de compra dos clientes. Com ferramentas digitais, é possível coletar informações sobre os clientes e enviar mensagens personalizadas.'}],show);
+
+/* Quizzes */
+function quizSet(id,title,qs){
+  const box=$(id);box.appendChild(h('h3','',title));box.firstChild.style.marginTop='0';
+  let ok=0;const sc=h('p','score',`Acertos de primeira: 0 de ${qs.length}`);sc.setAttribute('aria-live','polite');
+  qs.forEach((q,n)=>{
+    const d=h('div','qq');d.appendChild(h('p','',`${n+1}. ${q.q}`));
+    const fb=h('p','fb');fb.setAttribute('aria-live','polite');let tried=false,done=false;
+    q.o.forEach((o,i)=>{const b=h('button','opt',o);b.type='button';
+      b.onclick=()=>{if(done)return;
+        if(i===q.a){b.classList.add('right');done=true;fb.style.color='var(--ok)';fb.textContent='Correto! '+q.w;
+          d.querySelectorAll('.opt').forEach(x=>x.disabled=true);
+          if(!tried){ok++;sc.textContent=`Acertos de primeira: ${ok} de ${qs.length}`}}
+        else{tried=true;b.classList.add('wrong');b.disabled=true;fb.style.color='var(--no)';fb.textContent='Ainda não. Tente outra alternativa.'}};
+      d.appendChild(b)});
+    d.appendChild(fb);box.appendChild(d)});
+  box.appendChild(sc);
+}
+quizSet('#q1','Quiz rápido: características dos serviços',[
+ {q:'Quais das características a seguir são típicas dos serviços?',o:['Durabilidade e previsibilidade.','Intangibilidade e variabilidade.','Tangibilidade e perecibilidade.','Armazenamento e inseparabilidade.'],a:1,w:'Intangibilidade, inseparabilidade, variabilidade e perecibilidade são as quatro características.'},
+ {q:'Um show artístico não pode ser tocado nem materializado. Isso é:',o:['Perecibilidade','Intangibilidade','Variabilidade','Inseparabilidade'],a:1,w:'Serviço que não pode ser tocado é intangível.'},
+ {q:'O salão de beleza produz o serviço enquanto o cliente o consome. Isso é:',o:['Inseparabilidade','Variabilidade','Intangibilidade','Perecibilidade'],a:0,w:'Produção e consumo acontecem ao mesmo tempo.'},
+ {q:'Dois médicos prestam o mesmo serviço, mas um é mais atencioso. Isso é:',o:['Perecibilidade','Intangibilidade','Inseparabilidade','Variabilidade'],a:3,w:'A qualidade depende de quem presta o serviço.'},
+ {q:'Paciente falta, e o horário do médico é perdido. Isso é:',o:['Intangibilidade','Perecibilidade','Variabilidade','Inseparabilidade'],a:1,w:'O serviço não pode ser guardado para depois.'},
+ {q:'Qual estratégia ajuda a reduzir a variabilidade?',o:['Padronizar os processos internos.','Vender mais barato.','Atender só em horário de pico.','Evitar vídeos do serviço.'],a:0,w:'Um protocolo padrão mantém a qualidade, independentemente de turno ou profissional.'}]);
+quizSet('#q2','Quiz rápido: diferenciação e personalização',[
+ {q:'Qual é a principal vantagem da diferenciação de serviços no mercado competitivo?',o:['Mais clientes atendidos.','Redução de custos.','Valor único e vantagem competitiva.','Marketing mais agressivo.'],a:2,w:'Diferenciar é criar valor único frente aos concorrentes.'},
+ {q:'Um programa de fidelidade é exemplo de qual estratégia de diferenciação?',o:['Ser única','Reconheça clientes','Branding','Sustentável'],a:1,w:'Ele mostra ao cliente que ele é importante.'},
+ {q:'Pesquisa de satisfação e atenção às redes sociais correspondem a:',o:['Faça pesquisas','Ofereça a mais','Ser única','Foco no atendimento'],a:0,w:'É acompanhar o que o cliente faz e diz.'},
+ {q:'Se a vantagem é fácil de copiar, ela deixa de ser:',o:['Sustentável','Personalizada','Intangível','Perecível'],a:0,w:'A vantagem copiada vira algo temporário.'},
+ {q:'Chamar o cliente pelo nome em e-mails e mensagens é personalização por meio de:',o:['Tecnologia','Atendimento','Comunicação','Preço'],a:2,w:'Deixa a conversa mais próxima e acolhedora.'},
+ {q:'O Nike By You, em que o cliente escolhe cores e materiais, é exemplo de:',o:['Perecibilidade','Padronização','Personalização','Redução de custos'],a:2,w:'O produto fica exclusivo e reflete o estilo pessoal do cliente.'}]);
+quizSet('#q3','Quiz rápido: plano estratégico',[
+ {q:'Qual das opções é um exemplo de diferenciação de serviços?',o:['Preço baixo e promoções.','Atendimento personalizado.','Uso de mídias sociais.','Serviço no horário comercial.'],a:1,w:'O atendimento personalizado torna o serviço único para o cliente.'},
+ {q:'Na proposta de valor, o que precisa ficar claro?',o:['Só o preço.','O que o serviço oferece ao cliente e por que ele o escolheria.','Apenas o nome da empresa.','Quantos concorrentes existem.'],a:1,w:'A proposta de valor responde por que escolher este serviço.'},
+ {q:'Coletar dados dos clientes para oferecer opções sob medida é estratégia de:',o:['Diferenciação por preço','Padronização','Personalização','Perecibilidade'],a:2,w:'A personalização adapta o serviço às preferências do cliente.'},
+ {q:'Qual item NÃO está entre os que o plano estratégico precisa incluir?',o:['Público-alvo','Proposta de valor','Estratégias de personalização e diferenciação','Lista de funcionários da empresa'],a:3,w:'O plano reúne serviço, público-alvo, personalização, diferenciação e proposta de valor.'}]);
+
+/* Construtor de plano (Aula 3) */
+const focos={'Serviço de entrega de alimentos':'Perecibilidade e inseparabilidade','Academia':'Variabilidade e intangibilidade','Consultoria on-line':'Intangibilidade e inseparabilidade','Escola de idiomas':'Variabilidade e intangibilidade'};
+Object.keys(focos).forEach(k=>{const o=h('option','',k);o.value=k;$('#svc').appendChild(o)});
+const note=()=>{$('#svcNote').textContent='Foco sugerido: '+focos[$('#svc').value]+'.'};
+$('#svc').onchange=note;note();
+$('#mk').onclick=()=>{
+  const v=id=>($(id).value||'').trim()||'(em branco)';
+  $('#outTxt').textContent=`PLANO ESTRATÉGICO DE UM SERVIÇO\nServiço: ${$('#svc').value}\nCaracterísticas em foco: ${focos[$('#svc').value]}\nPúblico-alvo: ${v('#pub')}\nPersonalização: ${v('#per')}\nDiferenciação: ${v('#dif')}\nProposta de valor: ${v('#val')}`;
+  $('#out').hidden=false;$('#out').scrollIntoView({block:'nearest'});
+};
+$('#copy').onclick=async()=>{const f=$('#copyFb');
+  try{await navigator.clipboard.writeText($('#outTxt').textContent);f.textContent='Resumo copiado.';f.style.color='var(--ok)'}
+  catch(e){f.textContent='Não foi possível copiar. Selecione o texto e copie manualmente.';f.style.color='var(--no)'}};
+</script>
+</body>
+</html>
